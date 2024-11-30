@@ -26,7 +26,7 @@ public class _02BinaryAdd {
         if (carry == 1) {
             result.append(1);
         }
-
+        // 由于是低位开始，所以需要翻转
         return result.reverse().toString();
     }
 

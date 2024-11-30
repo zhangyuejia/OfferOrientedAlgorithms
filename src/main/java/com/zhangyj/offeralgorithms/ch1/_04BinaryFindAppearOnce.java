@@ -16,6 +16,7 @@ public class _04BinaryFindAppearOnce {
         int[] bitSums = new int[32];
         for (int num : nums) {
             for (int i = 0; i < 32; i++) {
+                // 获取数字对应二进制位上得值 右移后&1
                 bitSums[i] += (num >> (31 - i)) & 1;
             }
         }

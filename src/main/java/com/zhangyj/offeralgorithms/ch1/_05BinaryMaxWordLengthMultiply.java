@@ -64,6 +64,7 @@ public class _05BinaryMaxWordLengthMultiply {
 
         for (int i = 0; i < words.length; i++) {
             for (int j = i + 1; j < words.length; j++) {
+                // 使用数字存储所有数位的值，进行&运算判断是否存在同位的字母
                 if ((flags[i] & flags[j]) != 0) {
                     break;
                 }

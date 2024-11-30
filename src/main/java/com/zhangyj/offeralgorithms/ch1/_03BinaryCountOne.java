@@ -34,6 +34,9 @@ public class _03BinaryCountOne {
         return result;
     }
 
+    /**
+     * 从数字奇偶性判断数字1得规律
+     */
     public int[] countBits3(int num) {
         int[] result = new int[num + 1];
         for (int i = 1; i <= num; ++i) {
